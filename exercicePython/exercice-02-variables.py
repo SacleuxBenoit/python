@@ -14,7 +14,6 @@ first_number = 42
 second_number = 1.61
 prenom = "benoit sacleux"
 is_morning = False
-is_morning = True
 valueNone = None
 
 print(first_number)
