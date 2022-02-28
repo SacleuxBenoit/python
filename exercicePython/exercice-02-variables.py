@@ -41,4 +41,19 @@ print(round(1 / 3, 4))
 # À chaque fois stockez le résultat dans une variable et affichez le résultat.
 
 # réponse 2.2
+a = 2
+b = 1.62
+c = 1.62
+d = 1.62
+
+newA = float(a)
+newB = int(b)
+newC = int(round(c,0))
+newD = float(round(d, 1))
+
+
+print(newA)
+print(newB)
+print(newC)
+print(newD)
 
