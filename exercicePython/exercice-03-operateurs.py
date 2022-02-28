@@ -24,8 +24,8 @@ chocolates = 17
 friends = 3
 
 # réponse 3.2
-candies_rest = 15 / 3
-chocolates_rest = 17 / 3
+candies_rest = 15 % 3
+chocolates_rest = 17 % 3
 print(candies_rest)
 print(chocolates_rest)
 # exo 3.3
@@ -37,13 +37,17 @@ print(chocolates_rest)
 # Il y en a un qui va tout de suite vous donner la réponse.
 
 # réponse 3.3
-
+candies_per_person = candies / friends
+chocolates_per_person = candies / friends
+print(candies_per_person)
+print(chocolates_per_person)
 # exo 3.4
 # Calculez la moyenne des nombres suivants : 1, 1, 2, 3, 5, 8, 13.
 # Affectez le résultat à une variable et affichez le résultat.
 
 # réponse 3.4
-
+average = (1+1+2+3+5+8+13) / 7
+print(average)
 # exo 3.5
 # Alice est en vacance et elle veut suivre ses dépenses quotidiennes.
 # Stockez le montant de chacune de ses dépenses quotidiennes dans une variable différente :
@@ -58,7 +62,15 @@ print(chocolates_rest)
 # Affichez le nombre jours, le montant total et la moyenne des dépenses.
 
 # réponse 3.5
-
+day1 = 26.82
+day2 = 42.00
+day3 = 31.41
+day4 = 63.7
+day5 = 32
+days = 5
+total = day1 + day2 + day3 + day4 + day5
+average = total / days
+print(average)
 # exo 3.6
 # La formule suivante permet de convertir des miles en mètres :
 #
