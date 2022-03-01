@@ -82,7 +82,10 @@ print(average)
 # Convertissez les mètres en kilo mètres puis stockez le résultat dans la variable `km`.
 # Affichez un résultat arrondi de la distance en kilo mètre avec la fonction `round()`.
 miles = 3
-
+meters = miles * 1609.344
+print(meters)
+km = meters / 1000
+print(round(km))
 # réponse 3.6
 
 # exo 3.7
@@ -96,9 +99,9 @@ miles = 3
 
 price = 314
 tax_rate = 20
-
 # réponse 3.7
-
+tva = price * tax_rate / 100
+print(tva)
 # exo 3.8
 # La formule suivante permet de calculer un prix TVA inlcuse à partir du prix HTVA et du taux de TVA en pourcentage
 #
@@ -116,7 +119,8 @@ price = 271
 tax_rate = 20
 
 # réponse 3.8
-
+tax_included_price = price + price * tax_rate / 100
+print(tax_included_price)
 # exo 3.9
 # Charly fait ses courses.
 # Il compare le prix de deux marques différentes de chocolat.
@@ -129,4 +133,9 @@ tax_rate = 20
 # Affichez le résultat booléen.
 
 # réponse 3.9
+price_kilo_1 = 1.79 * 120 / 1000
+price_kilo_2 = 1.7 * 100 / 1000
+print(price_kilo_1, price_kilo_2)
 
+result = price_kilo_1 > price_kilo_2
+print(result)
