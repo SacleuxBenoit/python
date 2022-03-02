@@ -118,6 +118,12 @@ print(numberLessThanTen) # Affiche 4
 my_list = [2.71, 42, 123, 2, 3.14, 1.61]
 
 # réponse 6.13
+new_list= []
+for number in my_list:
+    number = number *100
+    new_list.append(number)
+
+print(new_list)
 
 # exo 6.14
 # Créez une deuxième liste ne contenant que les nombre entiers de la liste
