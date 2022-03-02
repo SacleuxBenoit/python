@@ -130,6 +130,11 @@ print(new_list)
 my_list = [2.71, 42, 123, 2, 3.14, 1.61]
 
 # réponse 6.14
+new_list = []
+for items in my_list:
+    new_list.append(int(items))
+
+print(new_list)
 
 # exo 6.15
 # Ici le but est d'intervertir les éléments de la liste deux à deux
@@ -143,12 +148,29 @@ my_list = [2.71, 42, 123, 2, 3.14, 1.61]
 my_list = [2.71, 42, 123, 2, 3.14, 1.61]
 
 # réponse 6.15
-
+for items in my_list:
+    i = 0
+    j = 1
+    
+    storage1 = my_list[i]
+    storage2 = my_list[j]
+    
+    storage1 = my_list[j]
+    storage2 = my_list[i]
+    i += 2
+    print(my_list)
+    
 # exo 6.16
 # Triez la liste en utilisant l'algorithme du tri bulle puis affichez la liste
 my_list = [2.71, 42, 123, 2, 3.14, 1.61]
 
 # réponse 6.16
+len_list = len(my_list)
+for i in range(len_list):
+    for j in range(0, len_list-i-1):
+        if my_list[j] > my_list[j+1] :
+            my_list[j], my_list[j+1] = my_list[j+1], my_list[j]
+            print(my_list)
 
 # code 6.1
 # Lire la valeur de la ligne `m` et de la colonne `n` d'un tableau en 2 dimensions
@@ -176,6 +198,7 @@ for _ in range(0, size):
 print(matrix)
 
 # réponse 6.17
+print(matrix[3][2])
 
 # code 6.2
 # Pour afficher toutes les combinaisons possibles de deux nombres de 0 à n inclus vous pouvez utiliser deux boucles `for` imbriquées
@@ -189,4 +212,3 @@ for i in range(0, 3):
 # Avec le même tableau en 2 dimensions, affichez toutes les valeurs plus petites ou égales à 50 ainsi que leur cordoonnées (ligne et colonne)
 
 # réponse 6.18
-
