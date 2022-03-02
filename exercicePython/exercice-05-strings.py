@@ -9,7 +9,7 @@ def multiplication(a: float, b: float) -> float:
     """Return a * b"""
     return a * b
 
-# print(help(multiplication)) (commenté pour éviter de flood le terminal)
+help(multiplication) 
 
 # exo 5.2
 # Trouvez la position de la chaîne de caractères `minim`
