@@ -34,7 +34,7 @@ for i in range(100):
 # en utilisant une boucle for, on tire 50 fois un nombre entier `r` au hasard entre 1 et 10 inclus
 # affichez `r` s'il est plus petit ou égal à 5
 
-# réponse 7.r
+# réponse 7.4
 for i in range(50):
     r = number
     if r <= 5:
