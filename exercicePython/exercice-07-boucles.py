@@ -6,14 +6,14 @@ import random
 # en utilisant une boucle for, affichez les nombre de 0 à 99 inclus
 
 # réponse 7.1
-for i in range(0,100,1):
+for i in range(100):
     print(i)
 
 # exo 7.2
 # en utilisant une boucle for, affichez les nombre de 0 à 100 inclus
 
 # réponse 7.2
-for i in range(0,101,1):
+for i in range(100):
     print(i)
 
 # code 7.1
@@ -25,45 +25,77 @@ number = random.randint(1, 10)
 # affichez `r` s'il est égal à 1
 
 # réponse 7.3
+for i in range(100):
+    r = number
+    if r == 1:
+        print(r)
 
 # exo 7.4
 # en utilisant une boucle for, on tire 50 fois un nombre entier `r` au hasard entre 1 et 10 inclus
 # affichez `r` s'il est plus petit ou égal à 5
 
-# réponse 7.4
+# réponse 7.r
+for i in range(50):
+    r = number
+    if r <= 5:
+        print(r)
 
 # exo 7.5
 # en utilisant une boucle for, on tire 20 fois un nombre entier `r` au hasard entre 1 et 10 inclus
 # affichez `r` s'il est plus grand ou égal à 6
 
 # réponse 7.5
-
+for i in range(20):
+    r= random.randint(1, 10)
+    if r>=6:
+        print(r)
+        
 # exo 7.6
 # en utilisant une boucle for, on tire 100 fois un nombre entier `r` au hasard entre 1 et 10 inclus
 # affichez `r` s'il est égal à 1 ou égal à 10
 
 # réponse 7.6
-
+for i in range(100):
+    r=random.randint(1,10)
+    if r==1 or r==10:
+        print(r)
+        
 # exo 7.7
 # en utilisant une boucle for, on tire 10 fois un nombre entier `r` au hasard entre 1 et 10 inclus
 # affichez `r` s'il est compris entre 3 et 8 inclus
 
 # réponse 7.7
-
+for i in range(10):
+    r=random.randint(1,10)
+    if r>=3 and r<=8:
+        print(r)
+        
 # exo 7.8
 # en utilisant une boucle for, on tire 50 fois un nombre entier `r` au hasard entre 1 et 10 inclus
 # utilisez une variable compteur `count` pour compter le nombre de fois où `r` est égal à 7
 # affichez la variable `count`
 
 # réponse 7.8
-
+count=0
+for i in range(50):
+    r=random.randint(1,10)
+    if r == 7:
+        count += 1
+        print(count)
+        
 # exo 7.9
 # en utilisant une boucle for, on tire 10 fois un nombre entier `r` au hasard entre 1 et 10 inclus
 # utilisez une variable compteur `count` pour compter le nombre de fois où `r` est plus petit ou égal à 4
 # affichez la variable `count`
 
 # réponse 7.9
-
+count=0
+for i in range(10):
+    r=random.randint(1,10)
+    if r<=4:
+        count+=1
+        print(count)
+exit()
 # exo 7.10
 # en utilisant une boucle for, on tire 33 fois un nombre entier `r` au hasard entre 1 et 10 inclus
 # utilisez une variable compteur `count` pour compter le nombre de fois où `r` est plus grand ou égal à 7
