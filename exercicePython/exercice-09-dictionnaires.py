@@ -9,7 +9,13 @@
 # Puis affichez le résultat avec un simple `print()`
 
 # réponse 9.1
-
+my_dict = {
+    'int':22,
+    'float':3.14,
+    'str':"Hello World",
+    'bool':True
+}
+print(my_dict)
 # exo 9.2
 # Créez un dictionnaire nommé `my_dict` associant :
 # - une clé booléenne et un nombre entier
@@ -19,7 +25,13 @@
 # Puis affichez le résultat avec un simple `print()`
 
 # réponse 9.2
-
+my_dict = {
+    False:3,
+    True:3.14,
+    False:'Hello World',
+    'bool':False
+}
+print(my_dict)
 # exo 9.3
 # Ajoutez au dictionnaire un élément qui associe la clé alphanumérique `ipsum` à la valeur `2.71`
 # Puis affichez le résultat avec un simple `print()`
