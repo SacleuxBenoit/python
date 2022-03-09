@@ -8,7 +8,10 @@
 # Appelez la fonction et affichez le résultat
 
 # réponse 10.1
-
+def my_sum(a,b):
+    print(a + b)
+    
+my_sum(10,12)
 # exo 10.2
 # Créer une fonction nommée `my_diff()` qui :
 # - prend deux paramètres de type `int`
@@ -18,6 +21,10 @@
 # Appelez la fonction et affichez le résultat
 
 # réponse 10.2
+def my_diff(a: int, b:int):
+    print(b-a)
+    
+my_diff(10,12)
 
 # exo 10.3
 # Créer une fonction nommée `oui_non()` qui :
@@ -28,6 +35,14 @@
 # Appelez la fonction avec la valeur False et affichez le résultat
 
 # réponse 10.3
+def oui_non(is_bool:bool):
+    if is_bool:
+        print(True)
+    else:
+        print(False)
+        
+oui_non(True)
+oui_non(False)
 
 # exo 10.4
 # Créer une fonction nommée `is_greater()` qui :
@@ -37,6 +52,14 @@
 # Appelez la fonction et affichez le résultat
 
 # réponse 10.4
+def is_greater(a:float, b:float):
+    if a > b:
+        print(True)
+    else:
+        print(False)
+        
+is_greater(3.14,1.10)
+is_greater(1.10,3.14)
 
 # exo 10.5
 # Créer une fonction nommée `compare()` qui :
@@ -47,6 +70,17 @@
 # Appelez la fonction et affichez le résultat
 
 # réponse 10.5
+def compare(a:float, b:float):
+    if a > b:
+        print(1)
+    elif b > a:
+        print(-1)
+    else:
+        print(0)
+        
+compare(2,1)
+compare(1,2)
+compare(2,2)
 
 # exo 10.6
 # La formule suivante permet de convertir des mètres en miles :
@@ -68,8 +102,16 @@
 # - 10 miles en mètres
 #
 # Appelez les fonctions et affichez les résultats
-
 # réponse 10.6
+def meters_to_miles(miles:float):
+    print(miles / 1609.344)
+    
+meters_to_miles(2)
+
+def miles_to_meters(meters:float):
+    print(meters * 1609.344)
+    
+miles_to_meters(1)
 
 # exo 10.7
 # Créer une fonction nommée `compute_tax()` qui :
@@ -85,4 +127,20 @@
 # Référence : [Quels sont les taux de TVA en vigueur en France et dans l'Union européenne ? | economie.gouv.fr](https://www.economie.gouv.fr/cedef/taux-tva-france-et-union-europeenne)
 
 # réponse 10.7
-
+def compute_tax(tax_type:int):
+    if tax_type == 1:
+        price = tax_type *(1 + (2.1 / 100))
+        print(price)
+    elif tax_type == 2:
+        price = tax_type *(1 + (5.5 / 100))
+        print(price)
+    elif tax_type == 3:
+        price = tax_type *(1 + (10 / 100))
+        print(price)
+    elif tax_type == 4:
+        price = tax_type *(1 + (20 / 100))
+        print(price)
+    else:
+        print(tax_type)
+        
+compute_tax(4)
