@@ -11,7 +11,13 @@
 # Pas la peine de créer de getters et de setters
 
 # réponse 12.1
-
+class User:
+    firstname = ""
+    lastname = ""
+    email = ""
+    newsletter = False
+    # note pour plus tard ajouter __init__
+    
 # exo 12.2
 # Créez 4 instances de la classe `User` et affectez les valeurs suivantes à ses attributs :
 # - user1
