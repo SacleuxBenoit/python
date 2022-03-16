@@ -43,7 +43,13 @@
 # Note : la suite doit démarre à 0.
 
 # réponse 1.1
+import numbers
 
+
+listFibonacci = [0,1,1,2,3,5,8,13,21,34]
+
+for item in listFibonacci:
+    print(item)
 # exo 1.2
 #
 # Reprenez votre boucle de type « for each » et modifiez-là de façon à
@@ -51,7 +57,8 @@
 # des nombres de Fibonacci.
 
 # réponse 1.2
-
+for item in range(len(listFibonacci)):
+    print(listFibonacci[item])
 # exo 1.3
 #
 # Écrivez une fonction nommé `fibonacci_1_3()` qui :
@@ -63,7 +70,14 @@
 # utilisant un index et la fonction `range()`.
 
 # réponse 1.3
-
+def fibonacci_1_3(number):
+    if number == 0 or number == 1:
+        print(number)
+    else:
+        print(None)
+        
+for i in range(2):
+    print(listFibonacci[i])
 # exo 1.4
 #
 # Reprenez votre fonction `fibonacci_1_3`, renommez-là `fibonacci_1_4`.
