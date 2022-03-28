@@ -31,7 +31,11 @@ for i in range(0, 2):
 head_or_tail = random.randint(0, 1)
 
 # réponse 1.1
-
+if head_or_tail == 0:
+    print(f"Alice gange la partie avec {head_or_tail}")
+else:
+    print(f"Bpb gagne la partie avec {head_or_tail}")
+    
 # exo 1.2
 # Alice et Bob veulent jouer aux dés.
 # Alice parie qu'elle va faire au moins 4. Bob parie qu'il va faire 3 au plus.
@@ -41,17 +45,42 @@ head_or_tail = random.randint(0, 1)
 dice = random.randint(1, 6)
 
 # réponse 1.2
-
+if dice >= 4:
+    print(f"Alice gagne avec {dice}")
+else:
+    print(f"Bob gagne avec {dice}")
 # exo 1.3
 # Alice et Bob jouent à pierre papier ciseaux.
 # - 1 équivaut à pierre
 # - 2 équivaut à papier
 # - 3 équivaut à ciseaux
 # Rédigez le code qui indique qui gagne.
-
 alice = random.randint(1, 3)
 bob = random.randint(1, 3)
 print(alice, bob)
 
 # réponse 1.3
-
+# note perso ; refacto plus tard
+# pierre alice
+if(alice == 1 and bob == 1):
+    print("match nul")
+elif(alice == 1 and bob == 2):
+    print("bob gagne")
+elif(alice == 1 and bob == 3):
+    print("alice gagne")
+    
+# papier alice
+if(alice == 2 and bob == 1):
+    print("alice gagne")
+elif(alice == 2 and bob == 2):
+    print("match nul")
+elif(alice == 2 and bob == 3):
+    print("bob gagne")
+    
+# ciseaux alice
+if(alice == 3 and bob == 1):
+    print("bob gagne")
+elif(alice == 3 and bob == 2):
+    print("alice gagne")
+elif(alice == 3 and bob == 3):
+    print("match nul")
