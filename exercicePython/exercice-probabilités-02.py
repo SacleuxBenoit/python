@@ -66,7 +66,28 @@ for i in range(0, 2):
 # Inspirez-vous de l'exemple 2.2.
 
 # réponse 2.1
-
+counter = 0
+# Premier lancer
+for i in range(0, 2):
+    # Deuxième lancer
+    for j in range(0, 2):
+        counter+=1
+        if i == 0:
+            # Le premier lancer donne pile
+            # Le paramètre end='' permet de ne pas passer à la ligne
+            print("pile", end='')
+        else:
+            # Le premier lancer donne face
+            # Le paramètre end='' permet de ne pas passer à la ligne
+            print("face", end='')
+        if j == 0:
+            # Le deuxième lancer donne pile
+            print(" & pile")
+        else:
+            # Le deuxième lancer donne face
+            print(" & face")
+        
+print(f"il y a {counter} possibilités")
 # exo 2.2
 # Maintenant, rédigez le code qui indique toutes les issues possibles d'un lancer de dé ainsi que le nombre total d'issues.
 # Rappel, les issues possibles pour un lancer de dé sont  : 1, 2, 3, 4, 5 et 6
@@ -79,4 +100,10 @@ for i in range(0, 2):
 # Inspirez-vous des exemples 2.2 et 2.3.
 
 # réponse 2.3
-
+counter=0
+for i in range(0,7):
+    for j in range(0,7):
+        print(i,j)
+        counter+=1
+        
+print(f"il y a {counter} possibilités")
