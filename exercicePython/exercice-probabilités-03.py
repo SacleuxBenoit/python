@@ -64,6 +64,19 @@ print(f"Il y a {percentage:.0f} % de chance d'avoir pile avec deux lancers")
 # Rédigez le code qui indique la probabilité qu'Alice gagne.
 
 # réponse 3.1
+issues = 0
+counter = 0
+
+for i in range(0,2):
+    for j in range(0,2):
+        issues+=1
+        if(i == 0 and j == 0):
+            counter+=1
+            print(counter)
+
+probability = counter / issues
+percentage = probability * 100
+print(f"il y a {percentage:.0f} % de chance d'avoir pile & pile en deux lancers")
 
 # exo 3.2
 # Bob parie qu'il va obtenir "pile & pile & pile" ou "pile & pile & face" avec 3 lancers.
@@ -71,15 +84,48 @@ print(f"Il y a {percentage:.0f} % de chance d'avoir pile avec deux lancers")
 # Rédigez le code qui indique la probabilité que Bob gagne.
 
 # réponse 3.2
-
+issues = 0
+counter = 0
+for i in range(0,2):
+    for j in range(0,2):
+        for k in range(0,2):
+            issues+=1
+            if(i == 0 and j == 0):
+                counter+=1
+         
+probability = counter / issues
+percentage = probability * 100
+print(f"il y a {percentage:.0f} % de chance d'avoir pile & pile sur les 2 premiers lancers")
 # exo 3.3
 # Alice parie qu'elle va obtenir au moins 2 fois pile, avec 3 lancers.
 # Avant d'écrire le code, détaillez toutes les issues gagnantes pour Alice.
 
 # réponse 3.3
 
+# premier lancer : pile = alice gagne
+# premier lancer : face = alice perd
+
+# deuxieme lancer : pile = alice gagne
+# deuxieme lancer : face = alice perd
+
+# troisième lancer : pile = alice gagne
+# troisième lancer : face = alice gagne (car déjà 2 pile)
+# si le 2iem lancer = face : alice doit donc faire pile au troisième lancer
+
 # exo 3.4
 # Rédigez le code qui indique la probabilité que Alice gagne.
 
 # réponse 3.4
+issues = 0
+counter = 0
 
+for i in range(0,2):
+    for j in range(0,2):
+        for k in range(0,2):
+            issues+=1
+            if i == 0 and j == 0 or k == 0:
+                counter+=1
+
+probability = counter / issues
+percentage = probability * 100
+print(f"il y a {percentage:.0f} % de chance d'avoir 2 fois pile avec 3 lancers")
