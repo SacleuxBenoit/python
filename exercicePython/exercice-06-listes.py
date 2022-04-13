@@ -132,7 +132,8 @@ my_list = [2.71, 42, 123, 2, 3.14, 1.61]
 # réponse 6.14
 new_list = []
 for items in my_list:
-    new_list.append(int(items))
+    if type(items) == int:
+        new_list.append(items)
 
 print(new_list)
 
