@@ -149,17 +149,13 @@ print(new_list)
 my_list = [2.71, 42, 123, 2, 3.14, 1.61]
 
 # réponse 6.15
-for items in my_list:
-    i = 0
-    j = 1
-    
-    storage1 = my_list[i]
-    storage2 = my_list[j]
-    
-    storage1 = my_list[j]
-    storage2 = my_list[i]
-    i += 2
-    print(my_list)
+for i in range(0, len(my_list), 2):
+    if i + 1 < len(my_list):
+        storage = my_list[i]
+        my_list[i] = my_list[i + 1]
+        my_list[i + 1] = storage
+
+print(my_list)
     
 # exo 6.16
 # Triez la liste en utilisant l'algorithme du tri bulle puis affichez la liste
