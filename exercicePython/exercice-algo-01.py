@@ -43,13 +43,15 @@
 # Note : la suite doit démarre à 0.
 
 # réponse 1.1
+
 import numbers
 
 
 listFibonacci = [0,1,1,2,3,5,8,13,21,34]
 
-for item in listFibonacci:
-    print(item)
+# for item in listFibonacci:
+#     print(item)
+
 # exo 1.2
 #
 # Reprenez votre boucle de type « for each » et modifiez-là de façon à
@@ -57,8 +59,8 @@ for item in listFibonacci:
 # des nombres de Fibonacci.
 
 # réponse 1.2
-for item in range(len(listFibonacci)):
-    print(listFibonacci[item])
+# for item in range(len(listFibonacci)):
+#     print(listFibonacci[item])
 # exo 1.3
 #
 # Écrivez une fonction nommé `fibonacci_1_3()` qui :
@@ -70,14 +72,15 @@ for item in range(len(listFibonacci)):
 # utilisant un index et la fonction `range()`.
 
 # réponse 1.3
-def fibonacci_1_3(number):
-    if number == 0 or number == 1:
-        print(number)
-    else:
-        print(None)
+# def fibonacci_1_3(number):
+#     if(number == 0 or number == 1):
+#         print("la valeur est de : ", number)
+#     else:
+#         print(None)
         
-for i in range(2):
-    print(listFibonacci[i])
+# for i in range(2):
+#     print(fibonacci_1_3(i))
+    
 # exo 1.4
 #
 # Reprenez votre fonction `fibonacci_1_3`, renommez-là `fibonacci_1_4`.
@@ -90,7 +93,16 @@ for i in range(2):
 # utilisant un index et la fonction `range()`.
 
 # réponse 1.4
-
+# def fibonacci_1_4(number):
+#     if(number == 0 or number == 1):
+#         print("la valeur est de : ", number)
+#     elif number == 2:
+#         print(fibonacci_1_3(0) + fibonacci_1_4(1))
+#     else:
+#         print(None)
+        
+# for i in range(3):
+#     print(fibonacci_1_4(i))
 # exo 1.5
 #
 # Reprenez votre fonction `fibonacci_1_4`, renommez-là `fibonacci_1_5`.
@@ -158,4 +170,13 @@ for i in range(2):
 # Appelez la fonction `fizzbuzz_2_1()` avec la valeur `20`.
 
 # réponse 2.1
-
+def fizzbuzz_2_1(nbr):
+    if nbr % 3 == 0 and nbr % 5 == 0:
+        print("fizz buzz")
+    elif nbr % 3 == 0:
+        print("fizz")
+    elif nbr % 5 == 0:
+        print("buzz")
+        
+for i in range(1,100):
+    fizzbuzz_2_1(i)
