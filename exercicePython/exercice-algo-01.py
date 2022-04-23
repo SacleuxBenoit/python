@@ -178,5 +178,5 @@ def fizzbuzz_2_1(nbr):
     elif nbr % 5 == 0:
         print("buzz")
         
-for i in range(1,100):
+for i in range(1,20):
     fizzbuzz_2_1(i)

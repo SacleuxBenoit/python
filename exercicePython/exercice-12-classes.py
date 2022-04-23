@@ -75,12 +75,16 @@ class ProductLorem:
     def __init__(self, name: str = "", price:float = 0.0):
         self.name = name
         self.price = price
-        
+     
+    # Getters 
     def get_name(self) -> str:
         return self.name
     
     def get_price(self) -> float:
         return self.price
+    
+    # Setters 
+
 # exo 12.5
 # Créez 3 instances de la classe `ProductLorem` et affectez les valeurs suivantes à ses attributs en utilisant les setters :
 # - product1
