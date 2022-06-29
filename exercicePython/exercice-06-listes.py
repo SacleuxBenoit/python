@@ -208,7 +208,7 @@ for i in range(0, 3):
 # Avec le même tableau en 2 dimensions, affichez toutes les valeurs plus petites ou égales à 50 ainsi que leur cordoonnées (ligne et colonne)
 
 # réponse 6.18
-for i in range(0, 3):
-    for j in range(0, 3):
+for i in range(len(matrix)):
+    for j in range(len(matrix)):
         if matrix[i][j]<=50:
-            print(matrix[i][j])
+            print(f"Valeur : {matrix[i][j]} coordonnés : {i,j}")
