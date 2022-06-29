@@ -76,17 +76,14 @@ class ProductLorem:
         self._name = name
         self._price = price
 
-    ## Getters
     def get_name(self):
         return self._name
     
-    def get_price(self):
-        return self._price
-
-    ## Setters
     def set_name(self, name):
         self._name = name
-
+    
+    def get_price(self):
+        return self._price
 
     def set_price(self, price):
         self._price = price
@@ -135,12 +132,12 @@ for product in products:
         print(product.get_price())
 
 
-sum = 0
+my_sum = 0
 for product in products:
-    sum += product.get_price()
-    sum = round(sum, 2)
+    my_sum += product.get_price()
 
-print(sum)
+my_sum = round(my_sum, 2)
+print(my_sum)
 
 # exo 12.7
 # Créez une classe nommée `ProductIpsum` qui possède les attributs suivants :
@@ -224,10 +221,9 @@ products = [product1, product2, product3]
 
 for product in products:
     print(f'product name : {product.get_name()}, price without tax : {product.get_price()}€, current tax : {product.get_tax()}%, including taxes: {product.get_tax_included_price()}€')
-
-withoutTaxes = product1.get_price() + product2.get_price() + product3.get_price()
-summTotalTax = product1.get_tax_fee() + product2.get_tax_fee() + product3.get_tax_fee()
-withTaxes = product1.get_tax_included_price() + product2.get_tax_included_price() + product3.get_tax_included_price()
+    withoutTaxes = product1.get_price() + product2.get_price() + product3.get_price()
+    summTotalTax = product1.get_tax_fee() + product2.get_tax_fee() + product3.get_tax_fee()
+    withTaxes = product1.get_tax_included_price() + product2.get_tax_included_price() + product3.get_tax_included_price()
 
 print(f'summ without taxes : {round(withoutTaxes,2)}€')
 print(f'summ with taxes : {round(summTotalTax, 2)}€')
