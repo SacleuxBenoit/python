@@ -37,10 +37,11 @@ print(chocolates_rest)
 # Il y en a un qui va tout de suite vous donner la réponse.
 
 # réponse 3.3
-candies_per_person = candies / friends
-chocolates_per_person = candies / friends
+candies_per_person = candies // friends
+chocolates_per_person = candies // friends
 print(candies_per_person)
 print(chocolates_per_person)
+exit()
 # exo 3.4
 # Calculez la moyenne des nombres suivants : 1, 1, 2, 3, 5, 8, 13.
 # Affectez le résultat à une variable et affichez le résultat.
