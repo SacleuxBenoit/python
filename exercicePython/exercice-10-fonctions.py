@@ -22,9 +22,9 @@ my_sum(10,12)
 
 # réponse 10.2
 def my_diff(a: int, b:int):
-    print(b-a)
+    print(a - b)
     
-my_diff(10,12)
+my_diff(12,10)
 
 # exo 10.3
 # Créer une fonction nommée `oui_non()` qui :
@@ -103,13 +103,13 @@ compare(2,2)
 #
 # Appelez les fonctions et affichez les résultats
 # réponse 10.6
-def meters_to_miles(miles:float):
-    print(miles / 1609.344)
+def meters_to_miles(meters:float):
+    return meters * 1609.344
     
 meters_to_miles(2)
 
-def miles_to_meters(meters:float):
-    print(meters * 1609.344)
+def miles_to_meters(miles:float):
+    return miles / 1609.344
     
 miles_to_meters(1)
 
@@ -127,20 +127,38 @@ miles_to_meters(1)
 # Référence : [Quels sont les taux de TVA en vigueur en France et dans l'Union européenne ? | economie.gouv.fr](https://www.economie.gouv.fr/cedef/taux-tva-france-et-union-europeenne)
 
 # réponse 10.7
-def compute_tax(tax_type:int):
-    if tax_type == 1:
-        price = tax_type *(1 + (2.1 / 100))
-        print(price)
-    elif tax_type == 2:
-        price = tax_type *(1 + (5.5 / 100))
-        print(price)
-    elif tax_type == 3:
-        price = tax_type *(1 + (10 / 100))
-        print(price)
-    elif tax_type == 4:
-        price = tax_type *(1 + (20 / 100))
-        print(price)
-    else:
-        print(tax_type)
+# def compute_tax(tax_type:int):
+#     if tax_type == 1:
+#         price = tax_type *(1 + (2.1 / 100))
+#         return price
+#     elif tax_type == 2:
+#         price = tax_type *(1 + (5.5 / 100))
+#         return price
+#     elif tax_type == 3:
+#         price = tax_type *(1 + (10 / 100))
+#         return price
+#     elif tax_type == 4:
+#         price = tax_type *(1 + (20 / 100))
+#         return price
+#     else:
+#         return tax_type
         
-compute_tax(4)
+# compute_tax(4)
+
+def compute_tax(price:float, tax_type:int):
+    if tax_type == 1:
+        price = price +(price * (2.1 / 100))
+        return price
+    elif tax_type == 2:
+        price = price + (price * (5.5 / 100))
+        return price
+    elif tax_type == 3 :
+        price = price + (price * (10 / 100))
+        return price
+    elif tax_type == 4 :
+        price = price + (price * (20 / 100))
+        return price
+    else:
+        return price
+
+print(compute_tax(100,1))
