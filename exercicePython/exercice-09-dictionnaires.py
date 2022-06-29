@@ -28,10 +28,11 @@ print(my_dict)
 my_dict = {
     False:3,
     True:3.14,
-    False:'Hello World',
+    42:'Hello World',
     'bool':False
 }
 print(my_dict)
+
 # exo 9.3
 # Ajoutez au dictionnaire un élément qui associe la clé alphanumérique `ipsum` à la valeur `2.71`
 # Puis affichez le résultat avec un simple `print()`
@@ -136,5 +137,5 @@ my_dict = {
 # etc...
 
 # réponse 9.10
-for item in my_dict:
-    print(my_dict.items())
+for key, item in my_dict.items():
+    print(key, ":", item)
