@@ -55,8 +55,9 @@ print(last_index)
 my_list = ['foo', 'bar', 'baz', 'lorem', 'ipsum']
 
 # réponse 6.7
-my_list[1] = "lorem"
-my_list[3] = "bar"
+storage = my_list[1]
+my_list[1] = my_list[3]
+my_list[3] = storage
 print(my_list)
 
 # Remarque 6.2
@@ -66,22 +67,22 @@ print(my_list)
 # Calculez la somme des nombres de la liste et affichez le résultat
 my_list = [2.71, 42]
 # réponse 6.8
-sum = 0
+my_sum = 0
 for numbers in my_list:
-    sum+=numbers
+    my_sum+=numbers
     
-print(sum)
+print(my_sum)
 
 # exo 6.9
 # Calculez la somme des nombres de la liste et affichez le résultat
 my_list = [2.71, 42, 123, 2, 3.14, 1.61]
 
 # réponse 6.9
-sum = 0
+my_sum = 0
 for numbers in my_list:
-    sum += numbers
+    my_sum += numbers
     
-print(sum)
+print(my_sum)
 
 # exo 6.10
 # Calculez la moyenne des nombres de la liste et affichez le résultat
@@ -89,9 +90,9 @@ my_list = [2.71, 42, 123, 2, 3.14, 1.61]
 average = 0
 # réponse 6.10
 for numbers in my_list:
-    average += numbers / 6
+    average += numbers
     
-print(average)
+print(average/len(my_list))
 
 # exo 6.11
 # Trouvez l'index de la valeur `3.14` dans la liste et affichez le résultat
@@ -118,12 +119,10 @@ print(numberLessThanTen) # Affiche 4
 my_list = [2.71, 42, 123, 2, 3.14, 1.61]
 
 # réponse 6.13
-new_list= []
-for number in my_list:
-    number = number *100
-    new_list.append(number)
-
-print(new_list)
+for i in range(len(my_list)):
+    my_list[i] = my_list[i] * 100
+    
+print(my_list)
 
 # exo 6.14
 # Créez une deuxième liste ne contenant que les nombre entiers de la liste
@@ -209,3 +208,7 @@ for i in range(0, 3):
 # Avec le même tableau en 2 dimensions, affichez toutes les valeurs plus petites ou égales à 50 ainsi que leur cordoonnées (ligne et colonne)
 
 # réponse 6.18
+for i in range(0, 3):
+    for j in range(0, 3):
+        if matrix[i][j]<=50:
+            print(matrix[i][j])
