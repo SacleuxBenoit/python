@@ -13,7 +13,7 @@ for i in range(100):
 # en utilisant une boucle for, affichez les nombre de 0 à 100 inclus
 
 # réponse 7.2
-for i in range(100):
+for i in range(101):
     print(i)
 
 # code 7.1
@@ -138,25 +138,23 @@ for i in range(100):
 
 # réponse 7.13
 for i in range(100):
-    even = i%2
-    if(even == 0):
+    if(i%2 == 0):
         print(i)
-    
+
 # exo 7.14
 # en utilisant une boucle for, affichez tous les nombre pairs, de 1 à 100 inclus
 
 # réponse 7.14
 for i in range(101):
-    even = i%2
-    if(even == 0):
+    if(i%2 == 0):
         print(i)
+        
 # exo 7.15
 # en utilisant une boucle for, affichez tous les nombres divisibles par 3, de 2 à 99 inclus
 
 # réponse 7.15
 for i in range(100):
-    even = i%3
-    if(even == 0):
+    if(i%3 == 0):
         print(i)
 
 # code 7.2
